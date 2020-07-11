@@ -1,0 +1,35 @@
+@import '~antd/es/style/themes/default.less';
+
+.loginContainer {
+    .login {
+        padding-top: 200px;
+        width: 300px;
+        margin: 0 auto;
+        :global {
+            .ant-nav-list {
+                margin: 0 auto;
+            }
+        }
+    }
+    .additionalRowContainer {
+        display: flex;
+        justify-content: space-between;    
+    }
+    .icon {
+        margin-left: 16px;
+        color: @text-color-secondary;
+        font-size: 24px;
+        vertical-align: middle;
+        cursor: pointer;
+        transition: color 0.3s;
+        &:hover {
+            color: @primary-color;
+        }
+    }
+    .other {
+        margin-top: 24px;
+        .register {
+            float: right;
+        }
+    }
+}

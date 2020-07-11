@@ -1,0 +1,37 @@
+@import '~antd/es/style/themes/default.less';
+
+.register {
+    padding-top: 200px;
+    width: 300px;
+    margin: 0 auto;
+    :global {
+        .ant-nav-list {
+            margin: 0 auto;
+        }
+    }
+}
+
+.login {
+    float: right;
+}
+
+.success {
+    color: @success-color;
+}
+
+.warning {
+    color: @warning-color;
+}
+
+.error {
+    color: @error-color;
+    transition: color 0.3s;
+}
+
+.progress-pass > .progress  {
+    :global {
+        .ant-progress-bg {
+            background-color:@warning-color;
+        }
+    }
+}
